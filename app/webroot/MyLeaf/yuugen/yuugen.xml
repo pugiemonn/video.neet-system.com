@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<igo>
+
+<layout bgcolor="114,162,150" background="yuugen/yuugen.gif" no_repeat="true" markspace="0,0" >
+
+<goban
+line="19"
+blackimg="yuugen/kuro.gif"
+whiteimg="yuugen/siro.gif"
+stonesize="25"
+haba="25"
+rect="0,0,491,512"
+startx="27"
+starty="48"
+linepaint="false"
+linecolor="0,0,0"
+xypaint="false"
+xycolor="232,252,232"
+xyspace="7,17,4,17"
+numfont1="14,-3,5"
+numfont2="12,-6,4"
+numfont3="11,-8,5"
+/>
+
+<paint text="LEAF_SIRO_NAME" textpos="532,105" fontcolor="0,0,0" fontsize="14" fontisbold="true" /> 
+<paint text="LEAF_KURO_NAME" textpos="701,105" fontcolor="0,0,0" fontsize="14" fontisbold="true" /> 
+<paint text="アゲハマ" textpos="528,139" fontcolor="0,0,0" fontsize="12" fontisbold="true" /> 
+<paint text="アゲハマ" textpos="702,139" fontcolor="0,0,0" fontsize="12" fontisbold="true" /> 
+<paint text="LEAF_KURO_HAMA" textpos="586,139" fontsize="14" fontcolor="0,0,0" /> 
+<paint text="LEAF_SIRO_HAMA" textpos="761,139" fontsize="14" fontcolor="0,0,0"/> 
+<paint text="石葉の使い方" textpos="35,552" fontsize="12" /> 
+<paint text="石葉２   YuuGen" textpos="26,18" fontsize="13" /> 
+<paint text="番 号" textpos="529,219" fontsize="14" fontisbold="true"/> 
+<paint text="出 力" textpos="599,218" fontsize="14" fontcolor="0,0,0"/> 
+<paint text="LEAF_DATE" textpos="722,552" fontsize="12"  /> 
+
+<image src="yuugen/soundon.gif"  pos="690,540" mode="ISIOTO_ON"></image>
+<image src="yuugen/soundoff.gif" pos="690,540" mode="ISIOTO_OFF"></image>
+
+<command name="LEAF_GO_START"   rect="515,486,36,16" />
+<command name="LEAF_BACK10"     rect="555,486,36,16" />
+<command name="LEAF_BACK1"      rect="595,486,36,16" />
+<command name="LEAF_AUTO_AHEAD" rect="630,486,36,16" />
+<command name="LEAF_AHEAD1"    rect="670,486,36,16" />
+<command name="LEAF_AHEAD10"   rect="710,486,36,16" />
+<command name="LEAF_GO_LAST"   rect="750,486,36,16" />
+
+<command name="LEAF_ISI_OTO"   rect="690,540,15,15" />
+<command name="LEAF_CALL" rect="0,0,50,20" hint="http://igo.main.jp/WakaFreeApplet.html" />
+<command name="LEAF_CALL" rect="7,537,106,20" hint="http://members.jcom.home.ne.jp/qin/StoneLeaf2/" />
+<command name="LEAF_NUMBER"  rect="516,203,60,20" />
+<command name="LEAF_OUTPUT"  rect="583,203,64,20" />
+
+<textarea name="MAIN_TEXT_AREA" rect="515,228,272,99" fontsize="15" fontisbold="false"  />
+
+<key val="[Right]"  cmd="LEAF_AHEAD1" />
+<key val="[Left]"   cmd="LEAF_BACK1" />
+<key val="[Up]"     cmd="LEAF_GO_START" />
+<key val="[Down]"   cmd="LEAF_GO_LAST" />
+
+</layout>
+
+</igo>

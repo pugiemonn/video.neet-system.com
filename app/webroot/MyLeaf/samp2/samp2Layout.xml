@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<igo>
+
+<layout bgcolor="60,110,165" background="./samp2/samp2bg.gif" no_repeat="true">
+
+<goban
+line="19"
+bancolor="243,184,47"
+blackimg="kurostone.gif"
+whiteimg="sirostone.gif"
+stonesize="11"
+haba="10"
+rect="32,19,195,195"
+startx="7"
+starty="7"
+linepaint="true"
+linecolor="0,0,0"
+xypaint="false"
+xyspace="7,17,4,17"
+xycolor="232,252,232"
+numfont1="12,-2,5"
+numfont2="10,-4,4"
+numfont3="7,-5,3"
+/>
+
+<goban
+line = "13"
+bancolor = "243,184,47"
+blackimg = "kurostone.gif"
+whiteimg = "sirostone.gif"
+stonesize = "15"
+haba = "15"
+rect = "30,18,197,197"
+startx = "8"
+starty = "8"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint = "false"
+xyspace = "14,17,4,24"
+xycolor = "242,252,232"
+numfont1="14,-3,5"
+numfont2="12,-5,5"
+numfont3="11,-8,4"
+/>
+
+<goban
+line = "9"
+bancolor = "243,184,47"
+blackimg = "kurostone.gif"
+whiteimg = "sirostone.gif"
+stonesize = "19"
+haba = "20"
+rect = "38,25,183,183"
+startx = "11"
+starty = "11"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint = "false"
+xyspace = "7,15,4,15"
+xy2space = "7,17,4,17"
+xycolor = "232,252,232"
+numfont1="14,-3,5"
+numfont2="12,-6,4"
+numfont3="11,-8,4"
+/>
+
+<goban
+line = "7"
+bancolor = "243,184,47"
+blackimg = "kurostone.gif"
+whiteimg = "sirostone.gif"
+stonesize = "19"
+haba = "26"
+rect = "33,23,187,187"
+startx = "15"
+starty = "15"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint = "false"
+xyspace = "30,17,4,40"
+xycolor = "232,252,232"
+numfont1="14,-3,5"
+numfont2="12,-5,5"
+numfont3="11,-8,4"
+/> 
+
+<goban
+line = "6"
+bancolor = "243,184,47"
+blackimg = "kurostone.gif"
+whiteimg = "sirostone.gif"
+stonesize = "19"
+haba = "30"
+rect = "38,25,183,183"
+startx = "15"
+starty = "15"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint="false"
+xyspace="7,17,4,17"
+xycolor="232,252,232"
+numfont1="14,-3,5"
+numfont2="12,-6,4"
+numfont3="11,-8,4"
+/>
+
+<image src="./samp2/samp2pic.gif" pos="94,223,209,223" mode="MOVES_PROGRESS">
+</image>
+
+<paint text="石葉 - StoneLeaf" textpos="15,13"
+       fontcolor="0,0,0" fontsize="12" />
+
+<paint text="LEAF_AUTO_SPEED 秒" textpos="200,13"
+       fontcolor="0,0,0" fontsize="10" />
+
+<textarea name="MAIN_TEXT_AREA" rect="1,262,261,61" visible="true" />
+
+<command name="LEAF_BACK1"       rect="123,240,20,15" hint="１手戻る" />
+<command name="LEAF_AHEAD1"      rect="145,240,20,15" hint="１手進む" />
+<command name="LEAF_AUTO_AHEAD"  rect="45,222,28,32"  hint="自動前進" />
+<command name="LEAF_AUTO_STOP"   rect="75,232,16,20"  hint="自動解除" />
+<command name="LEAF_GO_START"    rect="101,240,20,15" hint="初期局面へ" />
+<command name="LEAF_GO_LAST"     rect="167,240,20,15" hint="最終局面へ" />
+<command name="LEAF_SPEED_QUICK" rect="225,6,10,6"    hint="再生速度早く" />
+<command name="LEAF_SPEED_SLOW"  rect="239,5,10,8"    hint="再生速度遅く" />
+<command name="LEAF_SIZE_CHANGE" rect="234,220,16,16" nums = "0,61" hint="コメント表示" />
+<command name="LEAF_NUMBER"      rect="94,223,115,15"/>
+
+</layout>
+
+</igo>
+ 

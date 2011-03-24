@@ -1,0 +1,92 @@
+  <?xml version="1.0" encoding="Shift_JIS" ?> 
+  <igo>
+  <layout bgcolor="255,255,255">
+  <goban line="19" bancolor="243,184,47" blackimg="./aqua_simple/kurostone.gif" whiteimg="./aqua_simple/sirostone.gif" stonesize="18" haba="18" rect="0,0,365,365" startx="14" starty="14" linepaint="true" linecolor="0,0,0" xypaint="false" xycolor="112,105,71" xyspace="7,-15,-25,18" numfont1="12,-3,6" numfont2="10,-6,5" numfont3="8,-7,4" /> 
+  <goban line="13" bancolor="243,184,47" blackimg="./aqua_simple/kurostone.gif" whiteimg="./aqua_simple/sirostone.gif" stonesize="26" haba="26" rect="0,0,365,365" startx="19" starty="19" linepaint="true" linecolor="0,0,0" xypaint="false" xycolor="8,16,128" xyspace="7,15,1,18" numfont1="16,-6,8" numfont2="12,-9,7" numfont3="9,-11,5" /> 
+  <goban line="9" bancolor="243,184,47" blackimg="./aqua_simple/kurostone.gif" whiteimg="./aqua_simple/sirostone.gif" stonesize="38" haba="38" rect="0,0,365,365" startx="23" starty="23" linepaint="true" linecolor="0,0,0" xypaint="false" xycolor="8,16,128" xyspace="7,15,1,18" numfont1="28,-8,11" numfont2="18,-14,11" numfont3="12,-16,8" /> 
+  <textarea name="MAIN_TEXT_AREA" rect="0,406,414,80" /> 
+  <image src="./aqua_simple/abc_19.gif" pos="0,347" mode="MODE_BAN19" /> 
+  <image src="./aqua_simple/123_19.gif" pos="347,0" mode="MODE_BAN19" /> 
+  <image src="./aqua_simple/abc_13.gif" pos="0,347" mode="MODE_BAN13" /> 
+  <image src="./aqua_simple/123_13.gif" pos="347,0" mode="MODE_BAN13" /> 
+  <image src="./aqua_simple/abc_9.gif" pos="0,347" mode="MODE_BAN9" /> 
+  <image src="./aqua_simple/123_9.gif" pos="347,0" mode="MODE_BAN9" /> 
+  <image src="./aqua_simple/navi.gif" pos="0,366">
+  <command name="LEAF_RESET" rect="14,9,20,20" /> 
+  <command name="LEAF_NUMBER" rect="44,9,20,20" /> 
+  <command name="LEAF_SPEED_QUICK" rect="107,10,11,10" /> 
+  <command name="LEAF_SPEED_SLOW" rect="107,19,11,10" /> 
+  <paint text="LEAF_AUTO_SPEED" textpos="99,23" fontcolor="0,0,0" fontsize="10" fontisbold="false" /> 
+  <command name="LEAF_GO_START" rect="123,11,28,17" /> 
+  <command name="LEAF_BACK_PARENT" rect="154,5,26,16" /> 
+  <command name="LEAF_BACK_MAIN" rect="154,22,26,16" /> 
+  <command name="LEAF_BACK1" rect="183,11,24,17" /> 
+  <command name="LEAF_AHEAD1" rect="208,11,24,17" /> 
+  <command name="LEAF_GO_LAST" rect="232,11,30,18" /> 
+  <command name="LEAF_TREE" rect="272,10,31,18" /> 
+  <paint text="LEAF_KURO_HAMA" textpos="320,16" fontcolor="0,0,0" fontsize="14" /> 
+  <paint text="LEAF_SIRO_HAMA" textpos="320,30" fontcolor="0,0,0" fontsize="14" /> 
+  <command name="LEAF_CAL" rect="357,6,42,28" /> 
+  </image>
+  <image src="./aqua_simple/tool.gif" pos="366,0">
+  <command name="LEAF_NEW" rect="4,4,40,27" /> 
+  <command name="LEAF_BANSIZE_19" rect="4,31,12,11" /> 
+  <command name="LEAF_BANSIZE_13" rect="19,31,12,11" /> 
+  <command name="LEAF_BANSIZE_9" rect="33,31,12,11" /> 
+  <command name="LEAF_BB_MODE" rect="8,46,19,19" /> 
+  <command name="LEAF_WW_MODE" rect="25,46,19,19" /> 
+  <command name="LEAF_BW_MODE" rect="10,68,32,16" /> 
+  <command name="LEAF_SET_TURN" rect="5,80,16,16" /> 
+  <textfield name="MARK_STR" rect="26,118,20,22" /> 
+  <command name="LEAF_DEL" rect="4,96,19,12" /> 
+  <command name="LEAF_INS" rect="28,96,19,12" /> 
+  <command name="LEAF_SWAP" rect="4,106,30,12" /> 
+  <command name="LEAF_MARK_CLEAR" rect="3,130,23,12" /> 
+  <command name="LEAF_MARK_ONLY" rect="7,145,34,23" /> 
+  <command name="LEAF_INFO" rect="4,169,19,25" /> 
+  <command name="LEAF_EDIT" rect="25,169,18,20" /> 
+  <command name="SGF_CURRENT" rect="3,220,43,9" /> 
+  <command name="SGF_ALLDATA" rect="3,230,43,9" /> 
+  <command name="TEXT_GOBAN_NOCOL" rect="3,240,43,9" /> 
+  <command name="TEXT_GOBAN_COL" rect="3,250,43,9" /> 
+  <command name="LEAF_READ" rect="3,323,42,33" /> 
+  <command name="LEAF_SEND" rect="3,278,42,33" /> 
+  </image>
+  <image src="./aqua_simple/stop.gif" pos="67,373" mode="IS_AUTO" /> 
+  <image src="./aqua_simple/auto.gif" pos="67,373" mode="NOT_AUTO" /> 
+  <command name="LEAF_AUTO_AHEAD" rect="67,373,24,25" /> 
+  <image src="./aqua_simple/on.gif" pos="378,60" mode="BB_ON" /> 
+  <image src="./aqua_simple/on.gif" pos="397,60" mode="WW_ON" /> 
+  <image src="./aqua_simple/kurosaki.gif" pos="375,80" mode="KURO_SAKI" /> 
+  <image src="./aqua_simple/sirosaki.gif" pos="375,80" mode="SIRO_SAKI" /> 
+  <image src="./aqua_simple/on.gif" pos="378,163" mode="MARK_STONE" /> 
+  <image src="./aqua_simple/on.gif" pos="397,163" mode="MARK_EMPTY" /> 
+  <key val="[Right]" cmd="LEAF_AHEAD1" /> 
+  <key val="[Left]" cmd="LEAF_BACK1" /> 
+  <key val="[Up]" cmd="LEAF_GO_START" /> 
+  <key val="[Down]" cmd="LEAF_GO_LAST" /> 
+  <key val="[PgDown]" cmd="LEAF_BACK_MAIN" /> 
+  <key val="[PgUp]" cmd="LEAF_BACK_PARENT" /> 
+  <key val="[Ins]" cmd="LEAF_INS" /> 
+  <key val="[Home]" cmd="LEAF_TREE" /> 
+  <key val="[End]" cmd="LEAF_OUTPUT" /> 
+  <key val="[F1]" cmd="LEAF_HINT" /> 
+  <key val="[4]" cmd="LEAF_AUTO_BACK" /> 
+  <key val="[5]" cmd="LEAF_AUTO_STOP" /> 
+  <key val="[6]" cmd="LEAF_AUTO_AHEAD" /> 
+  <key val="[+]" cmd="LEAF_SPEED_SLOW" /> 
+  <key val="[-]" cmd="LEAF_SPEED_QUICK" /> 
+  <key val="[Ctrl]+[Shift]+[T]" cmd="LEAF_DEL_ALLTEXT" /> 
+  <key val="[Ctrl]+[Shift]+[K]" cmd="LEAF_MINUS" /> 
+  <key val="[Ctrl]+[Shift]+[Q]" cmd="LEAF_CONV_RET" /> 
+  <key val="[Ctrl]+[Shift]+[F5]" cmd="LEAF_SWAP_XY" /> 
+  <key val="[Ctrl]+[Shift]+[F6]" cmd="LEAF_UPDOWN" /> 
+  <key val="[Ctrl]+[Shift]+[F7]" cmd="LEAF_UPDOWN_YX" /> 
+  <key val="[Ctrl]+[Shift]+[F8]" cmd="LEAF_REVERSE" /> 
+  <key val="[Ctrl]+[Shift]+[F9]" cmd="LEAF_REVERSE_YX" /> 
+  <key val="[Ctrl]+[Shift]+[F10]" cmd="LEAF_LEFTRIGHT" /> 
+  <key val="[Ctrl]+[Shift]+[F11]" cmd="LEAF_LEFTRIGHT_YX" /> 
+  <key val="[Ctrl]+[Shift]+[F12]" cmd="LEAF_SIROKURO" /> 
+  <key val="HINT_KEY" cmd="true" /> 
+  </layout>
+  </igo>

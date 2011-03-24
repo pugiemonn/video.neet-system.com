@@ -1,0 +1,181 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+
+<style type="text/css">
+.StrFont
+{  
+   font-size:LARGE;
+   font-weight:BOLD;   
+   color:Forestgreen;  
+   font-family: "HG正楷書体-PRO", "ＭＳ 明朝", serif;  
+}
+</style>     
+
+<title> 石葉２ - ローカルリンク　</title>
+</head>
+
+<body bgcolor="Lightsteelblue"> <!--"#ddfdbd"--> 
+<div class="StrFont" align="center">
+
+<script language="JavaScript">
+<!--
+function OpenXml()
+{  // XML棋譜を開く
+   str = f1.Xml.value; 
+   if(str == "") { alert("棋譜名がありません。"); return; } 
+   if(str.toLowerCase().indexOf(".xml") < 0) { alert("XML棋譜ではありません。"); return; }
+
+   if(f1.ShowId.value != "") { str += ("?" + f1.ShowId.value); }
+   str = "file://" + location.pathname + "?file:///" + str;
+   location.href = str;
+}
+
+function ParsePat(pat, dir)
+{   // ../ 構造のファイル名チェック 
+ 
+   while(pat.indexOf("../") == 0)
+   {
+       pat = pat.substring(3); 
+       dir = PatDir(dir); 
+   }
+   return (dir + pat);
+}
+
+function PatDir(path)
+{  // 親フォルダパスを返す
+    
+   if(path.lastIndexOf("/") == path.length - 1)  
+   {   
+       path = path.substring(0, path.length - 2);
+   }
+   w1 = path.lastIndexOf("/");      
+   if(w1 > -1) { path = path.substring(0, w1 + 1); }
+   return path;
+}
+
+function DelData(str, head, tail)
+{
+   s1 = str.indexOf(head);
+   if(s1 < 0) return str;   
+   s2 = str.substring(s1).indexOf(tail);
+   if(s2 < 0) return str;
+   tmp = str.substr(s1, s2);
+   return str.substring(0, s1) + 
+          str.substring(s1 + tmp.substring(0, s2).length + tail.length);       
+}
+
+if(location.search) // クエリ情報あればアプレット碁盤を表示
+{  
+   var showid = "@@";
+   var fname = location.search.substring(1);  
+   
+   if(fname.lastIndexOf("/") > -1)
+   { 
+       kk = fname;
+       kk = DelData(kk,"{backpath:", "}");
+       w1 = kk.lastIndexOf("/");
+       document.title = " " + ((w1 > -1) ? kk.substring(w1 + 1) : kk);
+   }
+   else { document.title = " " +  fname; }
+       
+   w1 = fname.indexOf("@");
+   if(w1 > -1)
+   {  showid = fname.substring(w1);
+      fname = fname.substring(0, w1 - 1);
+   }
+   
+   document.write('<xml id="kifu"  src="' + fname + '" />'); 
+   
+   var sname = kifu.childNodes[1].text; 
+   w1 = sname.indexOf('href="');  
+   if(w1 > -1) 
+   { 
+      sname = sname.slice(w1 + 6, -2);
+      path = PatDir(fname);
+      w3 = sname.indexOf("/");
+      if(w3 < 0)
+      {
+         sname = path + sname;
+      }  
+      else
+      {  if(sname.indexOf("../") == 0)
+         {
+             sname = ParsePat(sname, path); 
+         }
+         else if(sname.indexOf("./") == 0)
+         {
+            sname = path + sname.substring(2);
+         }
+      }  
+   }
+   
+   document.write('<xml id="style" src="' + sname + '" />'); 
+
+   var str = kifu.transformNode(style.documentElement); 
+   str = str.substring(str.indexOf("<applet"), str.indexOf("</applet>")); 
+   str = DelData(str, "document.w", ");"); 
+   str = DelData(str, "\"><script", "write(\"") + "'>\n</applet>";    
+   str = str.replace(/--><\/script>/ , ""); 
+   str = str.replace(/moves\" value=\"</ , "moves\" value='<");
+   str = str.replace(/'\);/ , 
+      "\n<param name=advancemoves value=" + showid + " >" +
+      "\n<param name=xmlpat value=" + fname + " >");
+   
+   w1 = str.indexOf("codebase=");
+   if(w1 > -1)
+   {
+      base = str.substring(w1);
+      w2 = base.indexOf(" ");
+      if(w2 > -1) base = base.substring(9,w2);
+      moto = base;
+      if(base.indexOf("\"") == 0)
+      {
+         base = base.substring(1);
+      }
+      if(base.lastIndexOf("\"") == base.length - 1)  
+      {  // 最後の"を削除  
+          base = base.substring(0, base.length - 1);
+      }
+      
+      path = PatDir(fname);
+      w3 = base.indexOf("/");
+      if(w3 < 0)
+      {
+         base = path + base;
+      }  
+      else
+      {  if(base.indexOf("../") == 0)
+         {
+             base = ParsePat(base, path); 
+         }
+         else if(base.indexOf("./") == 0)
+         {
+             base = path + base.substring(2);
+         }
+      } 
+
+      if(base.indexOf("file:///") == 0) base = base.substring(8);
+         
+      str = str.replace(new RegExp(moto, ""), ('"' + base + '"')); 
+   }
+
+   document.write(str);       
+}
+
+else  // クエリ無ければローカルXML棋譜を開く 
+{  
+   document.write('<form name="f1" >'); 
+   document.write('XML 棋 譜 を 開 く<br><br><br>');
+   document.write('<input type="file" name="Xml" size="40" class="StrFont"><br><br>'); 
+   document.write('初期表示着手ID　');
+   document.write('<input type="text" name="ShowId" value="@@" size="7" class="StrFont"><br><br>');
+   document.write('<input type="button" value="  開 く " onClick="OpenXml()" class="StrFont" >');
+   document.write('</form>');
+}
+-->
+</script> 
+
+</div>
+</body>
+</html>

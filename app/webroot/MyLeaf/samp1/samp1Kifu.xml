@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<igo>
+
+<kifu size="19" next="white">
+
+<init data="
+W[pc]W[rc]B[qb]W[pb]W[pd]B[qd]B[qc]B[qe]B[rf]W[qf]
+W[pf]W[pe]W[rg]B[sg]W[rh]B[pa]W[nb]W[rd]B[re]
+" />
+
+<info GC="白先。どうなりますか？" />
+
+<main>
+<move pos="rb" />
+<move pos="ra" />
+<move pos="sb" />
+<move pos="sd" />
+<move pos="sf" />
+<move pos="sc" />
+<move pos="se" />
+<move pos="sd" />
+<move pos="sf" />
+<move pos="sc" text="前途不明..." />
+</main>
+
+</kifu>
+
+</igo>

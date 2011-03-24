@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<igo>
+
+<layout bgcolor="221,253,189" no_repeat="true">
+
+<goban
+line="19"
+bancolor="243,184,47"
+blackimg="kurostone.gif"
+whiteimg="sirostone.gif"
+stonesize="15"
+haba="16"
+rect="0,0,310,310"
+startx="9"
+starty="9"
+linepaint="true"
+linecolor="0,0,0"
+xypaint="false"
+xyspace="7,17,4,17"
+xycolor="232,252,232"
+numfont1="12,-2,5"
+numfont2="10,-4,4"
+numfont3="9,-6,3"
+/>
+
+<goban
+line = "13"
+bancolor = "243,184,47"
+blackimg = "kurostone13.gif"
+whiteimg = "sirostone13.gif"
+stonesize = "22"
+haba = "23"
+rect = "0,0,310,310"
+startx = "15"
+starty = "15"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint = "false"
+xyspace = "14,17,4,24"
+xycolor = "242,252,232"
+numfont1="14,-3,5"
+numfont2="12,-5,5"
+numfont3="11,-8,4"
+/>
+
+<goban
+line = "9"
+bancolor = "243,184,47"
+blackimg = "kurostone9.gif"
+whiteimg = "sirostone9.gif"
+stonesize = "33"
+haba = "34"
+rect = "0,0,310,310"
+startx = "17"
+starty = "17"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint = "false"
+xyspace = "7,15,4,15"
+xy2space = "7,17,4,17"
+xycolor = "232,252,232"
+numfont1="14,-3,5"
+numfont2="12,-6,4"
+numfont3="11,-8,4"
+/>
+
+<goban
+line = "7"
+bancolor = "243,184,47"
+blackimg = "kurostone7.gif"
+whiteimg = "sirostone7.gif"
+stonesize = "42"
+haba = "44"
+rect = "0,0,310,310"
+startx = "23"
+starty = "23"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint = "false"
+xyspace = "30,17,4,40"
+xycolor = "232,252,232"
+numfont1="14,-3,5"
+numfont2="12,-5,5"
+numfont3="11,-8,4"
+/> 
+
+<goban
+line = "6"
+bancolor = "243,184,47"
+blackimg = "kurostone6.gif"
+whiteimg = "sirostone6.gif"
+stonesize = "49"
+haba = "51"
+rect = "0,0,310,310"
+startx = "25"
+starty = "25"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint="false"
+xyspace="7,17,4,17"
+xycolor="232,252,232"
+numfont1="16,-3,5"
+numfont2="14,-6,4"
+numfont3="12,-8,4"
+/>
+
+//アゲハマ
+<image src="hama.gif" pos="0,315">
+  <paint text="LEAF_KURO_HAMA" textpos="25,16" fontsize="15" fontisbold="true" /> 
+  <paint text="LEAF_SIRO_HAMA" textpos="25,32" fontsize="15" fontisbold="true" /> 
+  <command name="LEAF_NUMBER" rect="0,0,50,36" /> 
+</image>
+
+//入力ツールバー
+<image src="maketool.gif" pos="55,312">
+   <command name="LEAF_PASS"     rect="0,0,26,22" />
+   <command name="LEAF_SET_TURN" rect="32,0,26,22" />
+   <command name="LEAF_WW_MODE"  rect="60,0,26,22" />
+   <command name="LEAF_BB_MODE"  rect="92,0,26,22" />
+   <command name="LEAF_BW_MODE"  rect="124,0,26,22" />
+
+   <paint rect="123,-1,27,26" rectcolor="16,120,240" fillrect="false" mode="BW_ON" />
+   <paint rect="124,0,27,26"  rectcolor="16,120,240" fillrect="false" mode="BW_ON" />
+   <paint rect="92,-1,27,26" rectcolor="192,255,192" fillrect="false" mode="BB_ON" />
+   <paint rect="93,0,27,26"  rectcolor="192,255,192" fillrect="false" mode="BB_ON" />
+   <paint rect="60,-1,27,26" rectcolor="192,255,192" fillrect="false" mode="WW_ON" />
+   <paint rect="61,0,27,26"  rectcolor="192,255,192" fillrect="false" mode="WW_ON" />
+ 
+   <image src="kurostone.gif" pos="35,3" mode="KURO_SAKI"> </image>
+   <image src="sirostone.gif" pos="35,3" mode="SIRO_SAKI"> </image>
+</image>
+
+//再生ツールバー
+<image src="showtool.gif" pos="46,344">
+   <command name="LEAF_GO_START" rect="0,0,26,22" />
+  <command name="LEAF_BACK10"   rect="29,0,26,22" />
+   <command name="LEAF_BACK1"    rect="57,0,26,22" />
+   <command name="LEAF_AHEAD1"   rect="85,0,26,22" />
+   <command name="LEAF_AHEAD10"  rect="113,0,26,22" />
+   <command name="LEAF_GO_LAST"  rect="141,0,26,22" />
+ </image> 
+ 
+<paint rect="214, 310, 50, 19" rectcolor="120,188,140" 
+       text="情報"  textpos="9,15" fontsize="14" fontisbold="true"
+       cmd="LEAF_INFO" cmdhint="Information" />
+<paint rect="214, 329, 50, 19" rectcolor="120,188,140" 
+       text="編集"  textpos="9,15" fontsize="14" fontisbold="true"
+       cmd="LEAF_EDIT" cmdhint="Edit Comment" />
+<paint rect="214, 348, 50, 19" rectcolor="120,188,140" 
+       text="読込"  textpos="9,15" fontsize="14" fontisbold="true"
+       cmd="LEAF_READ" cmdhint="Read TextArea" />
+
+//記号入力
+<image src="markset.gif" pos="265,315">
+   <command name="LEAF_MARK_CLEAR" rect="0,8,26,12" />
+   <command name="LEAF_MARK_ONLY"  rect="0,30,48,12" />
+   <textfield name="MARK_STR" rect="27,5,19,18" />
+   <checkbox name="MARK_ONLY" rect="1,31,11,12" />    
+</image>
+
+//コメントボックス
+<textarea name="MAIN_TEXT_AREA" rect="0,367,310,69" /> 
+
+<choice name="GOBAN_CHOICE" rect="40,435,90,50" bgcolor="216,248,255">
+   <item value="１９路盤" link="19" />
+   <item value="１３路盤" link="13" />
+   <item value="９路盤"   link="9"  />
+   <item value="７路盤"   link="7"  />
+   <item value="６路盤"   link="6"  />
+   <paint 
+    rect="-46,-2,46,25"
+    rectcolor="128,176,255"
+    text="碁盤" 
+    textpos="8,19"
+    fontsize="16"
+    fontisbold="true"
+    cmd="LEAF_NUMBER"
+    />      
+</choice>
+
+<choice name="KIFU_CHOICE" rect="40,455,90,50" bgcolor="216,248,255">
+   <paint 
+    rect="-46,-2,46,25"
+    rectcolor="128,176,255"
+    text="棋譜" 
+    textpos="8,19"
+    fontsize="16"
+    fontisbold="true"
+    cmd="LEAF_RESET"
+    />
+</choice>
+
+<choice name="OUT_CHOICE" rect="40,475,90,50" bgcolor="216,248,255">
+   <item value="SGF総譜"   link="SGF_ALLDATA" />    
+   <item value="SGF局面"   link="SGF_CURRENT" />  
+   <item value="XML総譜"   link="XML_ALLDATA" />    
+   <item value="XML局面"   link="XML_CURRENT" />  
+   <item value="複数棋譜" link="XML_LISTALL" /> 
+   <item value="text盤(色なし)"  link="TEXT_GOBAN_NOCOL"  />   
+   <item value="text盤(色付き)"  link="TEXT_GOBAN_COL"  />   
+   <item value="UGF棋譜"   link="UGF_CURRENT" />   
+   <paint 
+    rect="-46,-2,46,25"
+    rectcolor="128,176,255"
+    text="出力" 
+    textpos="8,19"
+    fontsize="16"
+    fontisbold="true"
+    cmd="LEAF_OUTPUT"
+   />  
+</choice>
+
+<list name="NODE_LIST" rect="130,456,120,40" bgcolor="255,255,255">
+   <paint 
+    rect="0,-22,120,22"
+    rectcolor="120,178,140"
+    text="変 化 図 操 作" 
+    textpos="7,17"
+    fontsize="16"
+    fontisbold="true"
+    cmd="LEAF_HINT_NUM"
+   /> 
+</list>
+
+<list name="LINK_LIST" rect="250,456,55,40" bgcolor="255,255,255">
+   <paint 
+    rect="0,-22,55,22"
+    rectcolor="120,188,140"
+    text="リンク" 
+    textpos="9,17"
+    fontsize="16"
+    fontisbold="true"
+   /> 
+</list>
+
+<key val="[Right]"	cmd="LEAF_AHEAD1" />
+<key val="[Left]"	cmd="LEAF_BACK1" />
+<key val="[Up]"		cmd="LEAF_GO_START" />
+<key val="[Down]"	cmd="LEAF_GO_LAST" />
+<key val="[PgDown]"	cmd="LEAF_BACK_MAIN" />
+<key val="[PgUp]"	cmd="LEAF_BACK_PARENT" />
+<key val="[Ins]"	cmd="LEAF_INS" />
+<key val="[Home]"	cmd="LEAF_TREE" />
+<key val="[BackSpace]"	cmd="LEAF_DEL" />
+<key val="[Del]"    	cmd="LEAF_DEL" />
+<key val="[End]"    	cmd="LEAF_OUTPUT" />  
+<key val="[F1]"     	cmd="LEAF_HINT" />
+<key val="[Shift]+[Home]"	cmd="LEAF_INFO" />
+<key val="[Shift]+[End]"	cmd="LEAF_CAL" />
+<key val="[0]"		cmd="LEAF_SWAP" />
+<key val="[4]"		cmd="LEAF_AUTO_BACK" />
+<key val="[5]"		cmd="LEAF_AUTO_STOP" />
+<key val="[6]"		cmd="LEAF_AUTO_AHEAD" />
+<key val="[+]"		cmd="LEAF_SPEED_SLOW" />
+<key val="[-]"		cmd="LEAF_SPEED_QUICK" />
+<key val="[Ctrl]+[Shift]+[T]"	cmd="LEAF_DEL_ALLTEXT" /> 
+<key val="[Ctrl]+[Shift]+[K]"	cmd="LEAF_MINUS" />
+<key val="[Ctrl]+[Shift]+[Q]"	cmd="LEAF_CONV_RET" />
+<key val="[Ctrl]+[Shift]+[F5]"	cmd="LEAF_SWAP_XY" />
+<key val="[Ctrl]+[Shift]+[F6]"	cmd="LEAF_UPDOWN" />
+<key val="[Ctrl]+[Shift]+[F7]"	cmd="LEAF_UPDOWN_YX" />
+<key val="[Ctrl]+[Shift]+[F8]"	cmd="LEAF_REVERSE" />
+<key val="[Ctrl]+[Shift]+[F9]"	cmd="LEAF_REVERSE_YX" />
+<key val="[Ctrl]+[Shift]+[F10]"	cmd="LEAF_LEFTRIGHT" />
+<key val="[Ctrl]+[Shift]+[F11]"	cmd="LEAF_LEFTRIGHT_YX" />
+<key val="[Ctrl]+[Shift]+[F12]"	cmd="LEAF_SIROKURO" />
+<key val="HINT_KEY"	cmd="true" />
+<popmenu owner="MAIN_TEXT_AREA">
+	<popitem text="読み込み" cmd="LEAF_READ" />
+	<popitem text="棋譜データ編集" cmd="LEAF_EDIT" />
+	<popitem text="棋譜データの改行文字を___に変換" cmd="LEAF_CONV_RET" />
+	<popitem text="コメントの改行文字を___に変換" cmd="LEAF_CONV_TXTRET" />
+	<popitem text="全着手コメント削除"  cmd="LEAF_DEL_ALLTEXT" />
+	<popitem text="マーククリア" cmd="LEAF_MARK_CLEAR" />
+	<popitem text="全て選択" cmd="LEAF_TEXT_SELALL" />
+	<popitem text="クリア"   cmd="LEAF_TEXT_CLEAR" />
+</popmenu>
+
+<popmenu owner="LEAF_THIS">
+<popnode text="棋譜管理">
+	<popitem text="新規作成"	cmd="LEAF_NEW" shortcut="N" />
+	<popitem text="棋譜リストに追加"	cmd="LEAF_PLUS" />
+	<popitem text="棋譜リストから削除"	cmd="LEAF_MINUS" shortcut="K" />
+	<popitem text="復帰"	cmd="LEAF_RESET" />
+	<popitem text="計算" cmd="LEAF_CAL" />
+	<popitem text="HTMLファイルの呼出"	cmd="LEAF_HTML" />
+</popnode>
+<popnode text="手順管理">
+	<popitem text="本手順にする"	cmd="LEAF_SWAP" />
+	<popitem text="着手挿入"	cmd="LEAF_INS" />
+	<popitem text="着手削除"	cmd="LEAF_DEL" />
+	<popitem text="本手順に戻る" cmd="LEAF_BACK_MAIN" />
+	<popitem text="親手順に戻る" cmd="LEAF_BACK_PARENT" />
+	<popitem text="リンク元へ戻る" cmd="LEAF_LINK_BACK" />
+	<popitem text="次のコメント付き着手に進む" cmd="LEAF_TEXT_GO" />
+	<popitem text="前のコメント付き着手に戻る" cmd="LEAF_TEXT_BACK" />
+</popnode>
+<popnode text="碁盤管理">
+	<popitem text="180度回転" cmd="LEAF_REVERSE" />
+	<popitem text="上下反転"  cmd="LEAF_UPDOWN" />
+	<popitem text="石色反転"  cmd="LEAF_SIROKURO" />
+	<popitem text="マウス座標" cmd="LEAF_XY" />
+</popnode>
+</popmenu></layout>
+
+</igo>
+ 

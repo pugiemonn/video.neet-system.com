@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<igo>
+
+<layout bgcolor="114,162,150" background="breeze/breeze.gif" no_repeat="true" markspace="0,0" >
+
+<goban
+line="19"
+blackimg="breeze/kuro.gif"
+whiteimg="breeze/siro.gif"
+stonesize="21"
+haba="23"
+rect="27,17,383,383"
+startx="0"
+starty="0"
+linepaint="false"
+linecolor="0,0,0"
+xypaint="false"
+xycolor="232,252,232"
+xyspace="7,17,4,17"
+numfont1="14,-3,5"
+numfont2="12,-6,4"
+numfont3="11,-8,5"
+/>
+
+<image src="KURO_PICTURE" pos="512,67"> </image>
+<image src="SIRO_PICTURE" pos="646,67"> </image>
+
+<paint text="LEAF_KURO_NAME" textpos="462,173" fontcolor="0,0,0" fontsize="16" fontisbold="true" /> 
+<paint text="LEAF_SIRO_NAME" textpos="591,173" fontcolor="0,0,0" fontsize="16" fontisbold="true" /> 
+<paint text="LEAF_KIFU_DT" textpos="464,430" fontsize="14" fontcolor="0,0,0"  /> 
+<paint text="LEAF_KIFU_RE" textpos="464,444" fontsize="14" fontcolor="0,0,0"  /> 
+
+<command name="LEAF_GO_START"  rect="457,297,24,22" />
+<command name="LEAF_BACK1"     rect="493,297,24,22" />
+<command name="LEAF_AHEAD1"    rect="532,297,24,22" />
+<command name="LEAF_GO_LAST"   rect="568,297,24,22" />
+<command name="LEAF_TEXT_BACK" rect="603,297,24,22" />
+<command name="LEAF_TEXT_GO"   rect="641,297,24,22" />
+<command name="LEAF_CLICK"     rect="680,297,28,22" />
+
+<command name="LEAF_HENKA_BACK"   rect="457,348,24,22" />
+<command name="LEAF_HENKA_GO" rect="493,348,24,22" />
+<command name="LEAF_NUMBER"     rect="532,348,24,22" />
+<command name="LEAF_ISI_OTO"    rect="568,348,24,22" />
+<command name="LEAF_OUTPUT"     rect="603,348,24,22" />
+<command name="LEAF_SEND"       rect="641,348,24,22" />
+<command name="LEAF_CALL"       rect="681,348,24,22" hint="http://olive.zero.ad.jp/qin/StoneLeaf2/" showhint="false" />
+
+<textarea name="MAIN_TEXT_AREA" rect="456,185,262,95" fontsize="15" fontisbold="false"  />
+
+<key val="[Right]"  cmd="LEAF_AHEAD1" />
+<key val="[Left]"   cmd="LEAF_BACK1" />
+<key val="[Up]"     cmd="LEAF_GO_START" />
+<key val="[Down]"   cmd="LEAF_GO_LAST" />
+<key val="[PgDown]" cmd="LEAF_BACK_MAIN" />
+<key val="[Home]"   cmd="LEAF_BACK_MAIN" />
+<key val="[PgUp]"   cmd="LEAF_BACK_PARENT" />
+<key val="[End]"    cmd="LEAF_BACK_MAIN" />  
+
+</layout>
+
+</igo>

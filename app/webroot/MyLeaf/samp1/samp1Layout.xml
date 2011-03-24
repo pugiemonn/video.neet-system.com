@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<igo>
+
+<layout bgcolor="60,110,165" background="./samp1/samp1bg.jpg " no_repeat="true">
+
+<goban
+line="19"
+b5ancolor="243,184,47"
+blackimg="kurostone.gif"
+whiteimg="sirostone.gif"
+stonesize="15"
+haba="15"
+rect="140,64,183,183"
+startx="0"
+starty="0"
+linepaint="true"
+linecolor="0,0,0"
+xypaint="false"
+xyspace="7,17,4,17"
+xycolor="232,252,232"
+numfont1="14,-3,5"
+numfont2="12,-6,4"
+numfont3="11,-8,4"
+startpos="10,1"
+xylimit="10,11"
+/>
+
+<goban
+line = "13"
+blackimg = "kurostone.gif"
+whiteimg = "sirostone.gif"
+stonesize = "15"
+haba = "15"
+rect="140,64,183,183"
+startx = "0"
+starty = "0"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint = "false"
+xyspace = "14,17,4,24"
+xycolor = "242,252,232"
+numfont1="14,-3,5"
+numfont2="12,-6,4"
+numfont3="11,-8,4"
+startpos="4,1"
+xylimit="10,12"
+/>
+
+<goban
+line = "9"
+bancolor = "243,184,47"
+blackimg = "kurostone.gif"
+whiteimg = "sirostone.gif"
+stonesize = "16"
+haba = "17"
+rect = "123,50,183,183"
+startx = "11"
+starty = "11"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint = "false"
+xyspace = "7,17,4,17"
+xy2space = "7,17,4,17"
+xycolor = "232,252,232"
+numfont1 = "14,-3,5"
+numfont2 = "12,-6,4"
+numfont3 = "11,-8,4"
+/>
+
+<goban
+line = "7"
+bancolor = "243,184,47"
+blackimg = "kurostone9.gif"
+whiteimg = "sirostone9.gif"
+stonesize = "41"
+haba = "52"
+rect = "60,55,383,383"
+startx = "34"
+starty = "34"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint = "true"
+xyspace = "30,17,4,40"
+xycolor = "232,252,232"
+/> 
+
+<goban
+line = "6"
+bancolor = "243,184,47"
+blackimg = "kurostone.gif"
+whiteimg = "sirostone.gif"
+stonesize = "20"
+haba = "20"
+rect = "60,55,123,123"
+startx = "11"
+starty = "11"
+linepaint = "true"
+linecolor = "0,0,0"
+xypaint = "true"
+xyspace = "7,17,4,17"
+xycolor = "232,252,232"
+numfont1 = "14,-4,4"
+numfont2 = "12,-6,4"
+numfont3 = "11,-8,4"
+/>
+
+<paint text="石葉-StoneLeaf" textpos="174,24" fontsize="12" fontisbold="true" />
+
+<textarea name="MAIN_TEXT_AREA" rect="0,300,353,66" />
+
+<command name="LEAF_BACK1"       rect="55,60,30,38" hint="１手戻る" />
+<command name="LEAF_AHEAD1"      rect="55,20,30,38" hint="１手進む" />
+<command name="LEAF_AUTO_AHEAD"  rect="90,40,30,38" hint="自動再生" />
+<command name="LEAF_GO_START"    rect="20,78,30,28" hint="初期局面" />
+<command name="LEAF_GO_LAST"     rect="90,78,30,28" hint="最終局面" />
+<command name="LEAF_SIZE_CHANGE" rect="242,262,30,26" nums="0,78" />
+<command name="LEAF_NUMBER"      rect="180,8,90,26"/>
+</layout>
+</igo>
+ 

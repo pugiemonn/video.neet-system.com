@@ -1,0 +1,183 @@
+/* SVN FILE: $Id: cake.generic.css 7945 2008-12-19 02:16:01Z gwoo $ */
+/**
+ *
+ * PHP versions 4 and 5
+ *
+ * CakePHP(tm) :  Rapid Development Framework (http://www.cakephp.org)
+ * Copyright 2005-2008, Cake Software Foundation, Inc. (http://www.cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @filesource
+ * @copyright     Copyright 2005-2008, Cake Software Foundation, Inc. (http://www.cakefoundation.org)
+ * @link          http://www.cakefoundation.org/projects/info/cakephp CakePHP(tm) Project
+ * @package       cake
+ * @subpackage    cake.app.webroot.css
+ * @since         CakePHP(tm)
+ * @version       $Revision: 7945 $
+ * @modifiedby    $LastChangedBy: gwoo $
+ * @lastmodified  $Date: 2008-12-18 18:16:01 -0800 (Thu, 18 Dec 2008) $
+ * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
+ */
+
+* {
+	margin:0;
+	padding:0;
+	background:#FFF;
+}
+
+body {
+	margin : 0 auto;
+	padding : 0;
+	text-align : center;
+	color : #4E463F;
+	font-size:0.85em;
+}
+h1,h2,p,li, div.input, div.submit {
+	text-align : left;
+}
+
+h1 a {
+color : #4E463F;
+}
+h2 {
+	margin: 0 0 4px;
+	width : 480px;
+	height : 32px;
+	background : url(../images/back_480_32_1.png);
+	font-size : 16px;
+	line-height : 32px;
+	text-indent : 16px;
+}
+h2 a {
+	color : #3B5D14;
+	text-decoration : none;  	
+}
+a ,li {
+	color : #105CB6;
+}
+a:hover {
+	color : #000033;
+}
+ul {	
+	margin : 0;
+	padding : 0;
+}
+li {
+	padding: 4px 0;
+	list-style : none;
+	line-height : 1.6em;
+}
+table {
+	border-right: solid 1px;
+	border-top: solid 1px;
+/*	border: #CCCCCC solid 1px;*/
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 490px;
+/*	position: relative;*/
+}
+th, td {
+	padding: 5px 0;
+	text-align: center;
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+/*	border: #CCCCCC solid 1px;*/
+/*	position: relative;*/
+}
+
+td.kanji, td.yomi {
+	width: 150px;
+}
+td.imi {
+	width: 140px;
+}
+th.kanji a, th.yomi a{
+	font-size: smaller;
+	position: absolute;
+	top: inherit;
+	right: auto;
+}
+
+.left {
+	display : inline;
+	float : left;
+}
+.right {
+	display : inline;
+	float : right;
+}
+.clear {
+	overflow: hidden;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+#wrapper {
+	width : 680px;
+	margin-right : auto;
+	margin-left : auto;
+	text-align : center;
+}
+#headline {
+	width : 680px;
+	height : 400px;
+	border : 5px solid #b2d281;
+/*	overflow : auto;*/
+}
+#navi-kana {
+	margin: 1em 0;
+	width : 680px;
+}
+#navi-kana li {
+	width : 60px;
+	text-align: center;
+	border-bottom: 1px solid #000033;
+}
+
+#navi-kana li.selected {
+	border-top: 1px solid #000033;
+	border-right: 1px solid #000033;
+	border-left: 1px solid #000033;
+	border-bottom: none;
+}
+
+#table-box {
+	margin: 0 auto;
+	width : 490px;
+}
+
+#main-list {
+	margin-bottom: 1em;
+}
+
+div#main-list table {
+	margin: 10px auto;
+	text-align: center;
+}
+div.error-message {
+	margin: 0.5em auto;
+	font-size:large;
+}
+#footer {
+	margin-bottom : 10px;
+	padding: 10px 0;
+/*	height : 32px;
+	line-height : 32px;*/
+	border : 3px solid #b2d281;
+}
+#footer p {
+	text-align: center;
+}
+.section {
+	margin-right : 10px;
+	margin-bottom : 1em;
+	width : 480px;
+}
+#wrapper, #main {
+	margin-top : 1em;
+}

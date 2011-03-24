@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="LocalLink.xsl" ?>
+
+<igo>
+
+<kifu size="19" next="black" name="030724_58">
+
+<info
+PB="太郎"
+PW="花子"
+DT="2002-12-12"
+KM="5.5"
+HL="{text:使い方}http://olive.zero.ad.jp/qin/StoneLeaf2/"
+MK="◇ap,☆bm"
+GC="サンプル棋譜"
+ />
+
+<init data="
+B[ap]B[bk]B[bo]B[bq]B[ce]B[cl]B[cm]B[cn]B[cp]B[cq]
+B[dc]B[dn]B[em]B[gc]B[oc]B[pc]B[qd]B[qf]W[bm]W[bn]
+W[co]W[dk]W[dl]W[dm]W[do]W[dp]W[dq]W[en]W[fo]W[ic]
+W[jp]W[md]W[nc]W[od]W[pp]
+" />
+
+<main>
+<move pos="cj" id="1" text="黒１コスミには" />
+<move pos="dj" id="2" text="白２とオシます。" />
+<move pos="ci" id="3" text="黒３ノビはしかたないですよね。" />
+<move pos="di" id="4" text="どんどんオシまくります。" />
+<move pos="ch" id="5" text="黒５ノビと謝ってくれるなら" />
+<move pos="dh" id="6" text="白６オシで白は景気がいいと思います。" />
+</main>
+
+<setting show_id="1" />
+
+<tree>
+<node>
+<leaf />
+<leaf />
+   <node data="C[変化図２]">
+   <leaf data="[di]ID[37]C[無理。]" />
+   <leaf data="[ck]ID[38]C[Good!]" />
+   <leaf data="[bl]ID[39]C[気合。]" />
+   <leaf data="[bj]ID[40]C[白良し。]" />
+   </node>
+<leaf />
+<leaf />
+   <node data="C[変化図１]">
+   <leaf data="[dh]ID[7]C[黒１ハネには]" />
+   <leaf data="[ch]ID[8]C[エイッ！と切る手はないでしょうか？]" />
+   <leaf data="[dg]ID[9]C[*黒３ナラビが怖いですが]" />
+   <leaf data="[cd]ID[10]C[*白４ツケでご機嫌伺いはいかがでしょう？]" />
+   <leaf data="[dd]ID[11]" />
+   <leaf data="[be]ID[12]C[*黒５オサエには*白６ハネでご機嫌伺いです。]" />
+   <leaf data="[bd]ID[13]C[*黒７と切りますよねぇ。]" />
+   <leaf data="[cf]ID[14]C[そこで*白８とハネアゲます。]" />
+      <node data="C[変化図３]">
+      <leaf data="[cc]ID[25]C[*黒１ヌキなら]" />
+      <leaf data="[de]ID[26]C[エイッとアテます。]" />
+      <leaf data="[ee]ID[27]" />
+      <leaf data="[cd]ID[28]C[*黒３ハネには*白４劫トリとご機嫌伺い]" />
+      <leaf data="[bc]ID[29]C[*黒５とついでくれたら（たらばなしですまそ）]" />
+      <leaf data="[bi]ID[30]C[*白６ハネを打ち]" />
+      <leaf data="[ck]ID[31]" />
+      <leaf data="[cg]ID[32]" />
+      <leaf data="[bl]ID[33]" />
+      <leaf data="[bj]ID[34]" />
+      <leaf data="[an]ID[35]" />
+      <leaf data="[bg]ID[36]C[*白１２と活きるのは勝手読みすぎますか？]" />
+      </node>
+   <leaf data="[de]ID[15]C[黒９ツギなら]" />
+   <leaf data="[ad]ID[16]C[*白１０ハネをキカシ]" />
+   <leaf data="[bc]ID[17]" />
+   <leaf data="[bi]ID[18]C[*白１２ハネが自慢の手筋]" />
+   <leaf data="[ck]ID[19]C[*黒１３ツギは仕方ないと思います。]" />
+   <leaf data="[cg]ID[20]" />
+   <leaf data="[bl]ID[21]C[*白１４ツギに*黒１５手入れもひつようでしょう。]" />
+   <leaf data="[bj]ID[22]" />
+   <leaf data="[an]ID[23]" />
+   <leaf data="[bg]ID[24]C[*白１６をキメてから*白１８で活きるのは虫がよすぎますか？]" />
+   </node>
+<leaf />
+<leaf />
+</node>
+</tree>
+
+</kifu>
+
+</igo>

@@ -1,0 +1,17 @@
+<h1>タスクの編集</h1>
+<p><a href="<?php echo h($html->url('/tasks')) ?>">タスク一覧へ戻る</a></p>
+<!--
+<form action="<?php echo h($html->url('/tasks/edit/' . $task['Task']['id'])) ?>" method="post">
+<?php echo $html->hidden('Task/id', $task['Task']['id']) ?>
+-->
+
+<h2>内容</h2>
+<!--<?php echo $form->create('hoge');?>-->
+<?php echo $form->create('tasks', array('type' => 'post', 'action' => 'edit'));?>
+<?php echo $form->end(); ?>
+<!--
+<p><?php echo $html->textarea('Task/content', array('cols' => '60', 'rows' => '3', 'value' => $task['Task']['content'])) ?></p>
+-->
+
+
+<p><input type="submit" value="保存"></p>

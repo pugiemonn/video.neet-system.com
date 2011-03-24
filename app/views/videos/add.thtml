@@ -1,0 +1,7 @@
+<p>漢字と読みを入力してください</p>
+<?php
+echo $form->create('Kanjitest');
+echo $form->input('kanji', array('label' => array('text' => '漢字')));
+echo $form->input('yomi', array('label' => array('text' => '読み')));
+echo $form->end('追加する');
+?>

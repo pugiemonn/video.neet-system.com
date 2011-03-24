@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>qinレイアウト</title>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<style type="text/css">
+    a:link {
+        color: #000088; text-decoration: none;
+    }
+    a:visited {
+        color: #101088; text-decoration: none;
+    }
+    a:hover{
+        color: #FF4500; text-decoration: underline;
+    }
+    body {
+        color: #004040;
+        background: #ddfdbd;
+        font-size: 14pt;
+        line-height: 16pt;
+    }
+DT{font-size: 18pt}
+H1{font-size: 22pt}
+</style>
+<body>
+<center><h1>プチレイアウト</h1></center>
+　このレイアウトファイルは<a href="http://www5b.biglobe.ne.jp/~mioko/igo/" target="_blank"><b>kikurahe</b></a>さん製作のミニ石葉に棋譜リストやリンクリストを加えたものです。
+<p>
+<img src="showtool.gif" align="left" hspace="20">の左端から、表示中の変化手順を本手順にするボタン、変化手順から本手順の分岐点に戻るボタン、変化手順に入る分岐点に戻るボタンを設けました。<br>
+<blockquote>
+&lt;applet<br>
+codebase="MyLeaf" code="KifuShow.LeafShow.class" name="LeafShow"<br>
+width="290" height="470"<br>
+archive="LeafShow2.jar"<br>
+&gt;<br>
+&lt;param name="layout" value="./peti/peti.xml"&gt;<br>
+&lt;param name="number" value="true"&gt;<br>
+&lt;param name="endstone" value="blink[1500]"&gt;<br>
+&lt;param name="countpath" value=".\StoneCount\StoneCount.html?"&gt;<br>
+&lt;param name="leafhint" value="true"&gt;<br>
+&lt;param name="advancemoves" value="@@"&gt;<br>
+&lt;param name="moves" value="<br>
+"&gt;<br>
+&lt;/applet&gt;
+</blockquote>
+
+</body>
+</html>

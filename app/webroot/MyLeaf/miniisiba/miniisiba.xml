@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<igo>
+
+<layout bgcolor="184,180,255">
+
+
+
+<goban
+line="19"
+bancolor="240,191,125"
+
+blackimg="./miniisiba/kurostone.gif"
+whiteimg="./miniisiba/sirostone.gif"
+stonesize="15"
+haba="15"
+rect="0,0,290,290"
+startx="10"
+starty="10"
+linepaint="true"
+linecolor="102,0,102"
+xypaint="false"
+xycolor="8,16,128"
+xyspace="7,15,1,18"
+numfont1="15,-3,5"
+numfont2="12,-5,5"
+numfont3="8,-6,4"
+/>
+
+<goban line="13" bancolor="240,191,125" blackimg="./miniisiba/kurostone2.gif" whiteimg="./miniisiba/sirostone2.gif" stonesize="19" haba="20" rect="0,0,290,290" startx="23" starty="23" linepaint="true" linecolor="102,0,102" xypaint="false" xycolor="8,16,128" xyspace="14,17,4,24" numfont1="19,-4,7" numfont2="17,-7,6" numfont3="13,-9,5" /> 
+
+  <goban line="9" bancolor="240,191,125" blackimg="./miniisiba/kurostone13.gif" whiteimg="./miniisiba/sirostone13.gif" stonesize="29" haba="30" rect="0,0,290,290" startx="24" starty="24" linepaint="true" linecolor="102,0,102" xypaint="false" xycolor="8,16,128" xyspace="20,17,4,30" numfont1="24,-7,8" numfont2="20,-10,7" numfont3="19,-12,7" /> 
+
+  <goban line="7" bancolor="240,191,125" blackimg="./miniisiba/kurostone9.gif" whiteimg="./miniisiba/sirostone9.gif" stonesize="41" haba="41" rect="0,0,290,290" startx="22" starty="22" linepaint="true" linecolor="102,0,102" xypaint="false" xycolor="8,16,128" xyspace="30,17,4,40" numfont1="34,-8,11" numfont2="30,-14,11" numfont3="24,-16,8" /> 
+
+  <goban line="6" bancolor="240,191,125" blackimg="./miniisiba/kurostone9.gif" whiteimg="./miniisiba/sirostone9.gif" stonesize="41" haba="45" rect="0,0,290,290" startx="32" starty="32" linepaint="true" linecolor="102,0,102" xypaint="false" xycolor="8,16,128" xyspace="34,17,4,44" numfont1="34,-8,11" numfont2="30,-14,11" numfont3="24,-16,8" /> 
+
+
+
+//入力ツールバー
+<command name="LEAF_SET_TURN" rect="168,445,26,22" />
+   <command name="LEAF_WW_MODE"  rect="195,443,25,25" />
+   <command name="LEAF_BB_MODE"  rect="225,443,25,25" />
+   <command name="LEAF_BW_MODE"  rect="253,443,25,25" />
+
+   <paint rect="253,441,25,23" rectcolor="16,120,240" fillrect="false" mode="BW_ON" />
+   <paint rect="254,442,25,23"  rectcolor="16,120,240" fillrect="false" mode="BW_ON" />
+   <paint rect="223,441,25,23" rectcolor="192,255,192" fillrect="false" mode="BB_ON" />
+   <paint rect="224,442,25,23"  rectcolor="192,255,192" fillrect="false" mode="BB_ON" />
+   <paint rect="190,441,25,23" rectcolor="192,255,192" fillrect="false" mode="WW_ON" />
+   <paint rect="189,442,25,23"  rectcolor="192,255,192" fillrect="false" mode="WW_ON" />
+ 
+   <image src="./miniisiba/kurostone.gif" pos="170,446" mode="KURO_SAKI"> </image>
+   <image src="./miniisiba/sirostone.gif" pos="170,446" mode="SIRO_SAKI"> </image>
+
+<paint text="WW  BB  BW" textpos="190,460" fontsize="15" fontcolor="21,31,224"/>  
+<paint text="Pass" textpos="125,460" fontsize="15" fontcolor="21,31,224"/>  
+
+<paint text="LEAF_KURO_HAMA" textpos="40,307" fontsize="12" fontcolor="0,0,0" /> 
+  <paint text="LEAF_SIRO_HAMA" textpos="12,307" fontsize="12" fontcolor="0,0,0" /> 
+<paint text="B   W" textpos="0,308" fontsize="15" fontcolor="51,51,200"  /> 
+
+
+<paint text="Number" textpos="1,322" fontsize="12" fontcolor="21,31,224"  /> 
+
+
+<command name="LEAF_NUMBER" rect="1,308,40,29" /> 
+<textarea name="MAIN_TEXT_AREA" rect="0,327,175,80" /> 
+  <list name="NODE_LIST" rect="175,327,115,55" bgcolor="219,222,248">
+  
+  </list>
+
+<image src="./miniisiba/showtool2.gif" pos="120,298" />
+
+<command name="LEAF_BACK1" rect="178,300,25,23" hint="１手戻る" /> 
+  <command name="LEAF_AHEAD1" rect="205,300,25,23" hint="１手進む" /> 
+   
+  <command name="LEAF_GO_START" rect="122,300,25,23" hint="初期局面" /> 
+
+  <command name="LEAF_GO_LAST" rect="261,300,25,23" hint="最終局面" /> 
+   
+<command name="LEAF_BACK10" rect="150,300,25,23" hint="10手戻る"/> 
+
+<command name="LEAF_AHEAD10" rect="233,300,25,23" 
+hint="10手進む"/> 
+
+ <choice name="OUT_CHOICE" rect="175,384,115,31" bgcolor="219,222,248">
+   <item value="SGF"   link="SGF_ALLDATA" />    
+     <item value="text盤"  link="TEXT_GOBAN_NOCOL"  />   
+      <item value="UGF"   link="UGF_CURRENT" />   
+   <item value="XML"   link="XML_ALLDATA" /> 
+  
+</choice>
+  
+<choice name="GOBAN_CHOICE" rect="117,444,45,20" bgcolor="219,222,248">
+  <item value="19" link="19" /> 
+  <item value="13" link="13" /> 
+  <item value=" 9" link="9" /> 
+  <item value=" 7" link="7" /> 
+  <item value=" 6" link="6" /> 
+  
+  </choice>
+
+
+
+
+<paint rect="72, 298, 43, 25" rectcolor="160,180,200" mode="NOT_AUTO" text="Auto" textpos="3,19" fontsize="16" fontisbold="true"  cmd="LEAF_AUTO_AHEAD" /> 
+  <paint rect="72, 298, 43, 25" rectcolor="186,192,224"  mode="IS_AUTO" text="Stop" textpos="4,19" fontsize="16" fontisbold="true" cmd="LEAF_AUTO_AHEAD" /> 
+
+ <paint rect="50, 298, 22, 25" rectcolor="186,192,224" text="R" textpos="6,19" fontsize="16" fontisbold="true" cmd="LEAF_RESET" /> 
+
+<paint rect="90, 412, 40, 25" rectcolor="186,192,224" mode="NOT_EDIT" text="Edit" textpos="5,19" fontsize="16" fontisbold="true" cmd="LEAF_EDIT" cmdhint="コメント編集" /> 
+
+<paint rect="45, 412,45, 25" rectcolor="160,180,200" text="Read" textpos="4,19" fontsize="16" fontisbold="true" cmd="LEAF_READ" cmdhint="読み込み" /> 
+
+
+
+　
+<paint rect="175, 412, 45, 25" rectcolor="186,192,224" text="Swap" textpos="5,19" fontsize="16" fontisbold="true" cmd="LEAF_SWAP" cmdhint="入れ替え" /> 
+
+<paint rect="130, 412, 45, 25" rectcolor="186,192,224" text="Tree" textpos="4,19" fontsize="16" fontisbold="true" cmd="LEAF_TREE" cmdhint="ツリー" /> 
+
+<paint rect="0, 412, 45, 25" rectcolor="160,180,200" text="New" textpos="7,19" fontsize="16" fontisbold="true" cmd="LEAF_NEW" cmdhint="新規作成" /> 
+
+<paint rect="220, 412, 45, 25" rectcolor="186,192,224" text="Info" textpos="6,19" fontsize="16" fontisbold="true" cmd="LEAF_INFO" cmdhint="棋譜情報" /> 
+
+<paint rect="265, 412, 25, 25" rectcolor="186,192,224" text="P" textpos="10,19" fontsize="16" fontisbold="true" cmd="LEAF_PASS" cmdhint="パス" /> 
+
+
+<command name="LEAF_MARK_CLEAR" rect="30,468,26,12" /> 
+  <command name="LEAF_MARK_ONLY" rect="71,450,48,12" /> 
+  <textfield name="MARK_STR" rect="5,445,19,18" /> 
+  <checkbox name="MARK_ONLY" rect="61,451,11,12" /> 
+  
+
+  
+<paint text="Mark" textpos="25,460" fontsize="15" fontcolor="21,31,224"  /> 
+<paint text="Stone" textpos="77,460" fontsize="15" fontcolor="21,31,224"  /> 
+
+<popmenu owner="MAIN_TEXT_AREA">
+  <popitem text="読み込み" cmd="LEAF_READ" /> 
+  <popitem text="-" /> 
+   <popitem text="削除" cmd="LEAF_DEL" /> 
+  <popitem text="全着手コメント削除" cmd="LEAF_DEL_ALLTEXT" /> 
+    <popitem text="-" /> 
+  <popitem text="全て選択" cmd="LEAF_TEXT_SELALL" /> 
+  <popitem text="クリア" cmd="LEAF_TEXT_CLEAR" /> 
+  </popmenu>
+
+<popmenu owner="LEAF_THIS">
+  
+  <popitem text="上下反転" cmd="LEAF_UPDOWN" /> 
+  <popitem text="石色反転" cmd="LEAF_SIROKURO" /> 
+ </popmenu>
+ 
+
+ 
+</layout>
+
+</igo>

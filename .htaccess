@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+#   RewriteCond %{REQUEST_FILENAME} !-f
+#   RewriteCond %{REQUEST_FILENAME} !-d   
+#   RewriteRule    ^$ app/webroot/index.html
+#   RewriteRule    ^$ app/webroot/index.html
+   RewriteRule    ^index\.php  app/webroot/index.html    [L]
+   RewriteRule    ^$ app/webroot/index.html    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
+</IfModule>

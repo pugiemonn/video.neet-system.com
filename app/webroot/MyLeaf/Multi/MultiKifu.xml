@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<igo>
+
+<kifu size="9" next="black" name="sample9">
+
+<info
+PB="太 郎"
+PW="花 子"
+DT="2002-11-08"
+HL="sample13?@5,sample19?@9"
+/>
+
+<main>
+<move pos="cd" id="1" link="@12" />
+<move pos="dd" id="2" />
+<move pos="dc" id="3" />
+<move pos="cc" id="4" />
+<move pos="eb" id="5" />
+<move pos="ed" id="6" />
+<move pos="be" id="7" />
+<move pos="bc" id="8" text="前途不明。" />
+</main>
+
+<tree>
+<node>
+<leaf data="[cd]" />
+<leaf data="[dd]" />
+<leaf data="[dc]" />
+<leaf data="[cc]" />
+   <node>
+   <leaf data="[ed]ID[9]" />
+   <leaf data="[de]ID[10]" />
+   <leaf data="[bc]ID[11]" />
+   <leaf data="[cb]ID[12]" />
+   </node>
+<leaf data="[eb]" />
+<leaf data="[ed]" />
+<leaf data="[be]" />
+<leaf data="[bc]" />
+</node>
+</tree>
+
+</kifu>
+
+<kifu size="19" next="black" name="sample19">
+
+<info
+DT="2002-11-10"
+/>
+
+<main>
+<move pos="pd" id="1" />
+<move pos="qf" id="2" />
+<move pos="pf" id="3" />
+<move pos="pg" id="4" />
+<move pos="of" id="5" />
+<move pos="qe" id="6" />
+<move pos="qd" id="7" />
+<move pos="qj" id="8" />
+<move pos="jc" id="9" />
+</main>
+
+<setting
+start_number="1"
+advance_moves="5"
+/>
+
+<tree>
+<node>
+<leaf data="[pd]" />
+<leaf data="[qf]" />
+<leaf data="[pf]" />
+<leaf data="[pg]" />
+   <node>
+   <leaf data="[qe]ID[10]" />
+   <leaf data="[of]ID[11]" />
+   <leaf data="[pe]ID[12]" />
+   <leaf data="[qg]ID[13]" />
+   <leaf data="[nd]ID[14]" />
+   <leaf data="[qk]ID[15]" />
+   </node>
+<leaf data="[of]" />
+<leaf data="[qe]" />
+<leaf data="[qd]" />
+<leaf data="[qj]" />
+<leaf data="[jc]" />
+</node>
+</tree>
+
+</kifu>
+
+<kifu size="13" next="black" name="sample13">
+
+<main>
+<move pos="kc" id="1" />
+<move pos="jd" id="2" />
+<move pos="jc" id="3" />
+<move pos="id" id="4" />
+<move pos="le" id="5" />
+<move pos="jg" id="6" />
+<move pos="hb" id="7" />
+<move pos="fd" id="8" />
+<move pos="jf" id="9" />
+<move pos="if" id="10" />
+<move pos="kf" id="11" />
+<move pos="ig" id="12" />
+</main>
+
+<setting
+start_number="1"
+advance_moves="0"
+/>
+
+</kifu>
+
+</igo>
