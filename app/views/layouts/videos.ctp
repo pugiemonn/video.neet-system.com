@@ -14,7 +14,7 @@
   <div id="wrapper">
 	    <div id="header">
   	        <h1><a href="/videos/">動画アンテナ ver.α</a> <?php if(isset($skanaword)) { e($skanaword);}  ?></h1>
-			<p>動画<a href="http://mixi.jp/run_appli.pl?id=3035" target="_blank">能力大学-漢字テスト</a>の復習サイトです。</p>
+			<p>動画</p>
 	    </div>
 	    <div id="main">
 			<?php echo $content_for_layout; ?>
@@ -23,14 +23,18 @@
 			<p>Powered by <a href="http://www.neet-system.com">ニートシステムドットコム</a></p>
 		</div>
     </div>
-<script type="text/javascript"><!--
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-//--></script>
-<script type="text/javascript"><!--
-try {
-var pageTracker = _gat._getTracker("UA-2157335-7");
-pageTracker._trackPageview();
-} catch(err) {}//--></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2157335-13']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
