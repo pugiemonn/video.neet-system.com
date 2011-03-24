@@ -7,7 +7,7 @@ echo $form->end('追加する');
 ?>
 <div id="main-list">
 	<!-- ナビゲーション -->
-	<?php e($this->element('navi-video'));?>
+	<?php e($this->element('navi-kana'));?>
     <div id="table-box">
 		<?php 
 			e("<p class=\"text-right\">");
