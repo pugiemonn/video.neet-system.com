@@ -1,0 +1,7 @@
+	<div id="navi-kana">
+        <ul class="clear">
+		<?php for($i=0;$i<11;$i++) {?>
+            <li class="left <?php //if($i==$pages || ($i=='0' && $pages<1 )) e("selected"); ?>"><a href="/kanjitests/skana/<?php e($i); ?>"><?php //e($skanalist[$i]); ?></a></li>
+        <?php } ?>
+        </ul>
+	</div>
