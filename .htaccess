@@ -4,7 +4,7 @@
 #   RewriteCond %{REQUEST_FILENAME} !-d   
 #   RewriteRule    ^$ app/webroot/index.html
 #   RewriteRule    ^$ app/webroot/index.html
-   RewriteRule    ^index\.php  app/webroot/index.html    [L]
-   RewriteRule    ^$ app/webroot/index.html    [L]
+#   RewriteRule    ^index\.php  app/webroot/index.html    [L]
+#   RewriteRule    ^$ app/webroot/index.html    [L]
    RewriteRule    (.*) app/webroot/$1 [L]
 </IfModule>
